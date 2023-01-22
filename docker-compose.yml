@@ -1,0 +1,17 @@
+version: '3'
+services:
+  account-ms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: up_account_ms
+    depends_on:
+      - kafka
+    networks: 
+      - internal
+    ports:
+      - 3001:3001
+
+networks:
+  internal:
+    driver: bridge

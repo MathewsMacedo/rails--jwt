@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Rails Api Routes</title>
+        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav class="menu">
+                <a href="https://github.com/MathewsMacedo"><img src="./assets/img/github.png"/> MathewsMacedo </a>
+                </nav>
+            </header>
+        </div>
+        <div class="container table">
+            <table>
+                <caption>Routes Summary</caption>
+                <thead>
+                <tr>
+                    <th scope="col">URL / ENDPOINT</th>
+                    <th scope="col">METHOD</th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col">HEADER</th>
+                    <th scope="col">QUERY</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td data-label="URL / ENDPOINT">/api/restrito/v1/user/users</td>
+                    <td data-label="METHOD">POST</td>
+                    <td data-label="DESCRIPTION">Create a User</td>
+                    <td data-label="HEADER">No</th>
+                    <td data-label="QUERY">name | email | username | password | password_confirmation</th>
+                </tr>
+                <tr>
+                    <td data-label="URL / ENDPOINT">/api/restrito/v1/auth/login</td>
+                    <td data-label="METHOD">POST</td>
+                    <td data-label="DESCRIPTION">Generate token - login</td>
+                    <td data-label="HEADER">No</th>
+                    <td data-label="QUERY">email | password</th>
+                </tr>
+                <tr>
+                    <td data-label="URL / ENDPOINT">/api/restrito/v1/user/users</td>
+                    <td data-label="METHOD">GET</td>
+                    <td data-label="DESCRIPTION">Return all users</td>
+                    <td data-label="HEADER">Authentication | TOKEN</th>
+                    <td data-label="QUERY">No</th>
+                </tr>
+                <tr>
+                    <td data-label="URL / ENDPOINT">/api/restrito/v1/user/users/{username}</td>
+                    <td data-label="METHOD">GET</td>
+                    <td data-label="DESCRIPTION">Return user</td>
+                    <td data-label="HEADER">Authentication | TOKEN</th>
+                    <td data-label="QUERY">No</th>
+                </tr>
+                <tr>
+                    <td data-label="URL / ENDPOINT">/api/restrito/v1/user/users/{username}</td>
+                    <td data-label="METHOD">PUT</td>
+                    <td data-label="DESCRIPTION">Update user</td>
+                    <td data-label="HEADER">Authentication | TOKEN</th>
+                    <td data-label="QUERY">Optional</th>
+                </tr>
+                <tr>
+                    <td data-label="URL / ENDPOINT">/api/restrito/v1/user/users/{username}</td>
+                    <td data-label="METHOD">DELETE</td>
+                    <td data-label="DESCRIPTION">Update user</td>
+                    <td data-label="HEADER">Authentication | TOKEN</th>
+                    <td data-label="QUERY">No</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
