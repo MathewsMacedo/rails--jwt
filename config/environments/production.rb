@@ -78,7 +78,12 @@ Rails.application.configure do
     logger.formatter = config.log_formatter
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
-
+  config.hosts << "account-ms"
+  config.hosts << "up_account_ms"
+  config.hosts << "up_faceruby"
+  config.hosts << "faceruby-ms"
+  config.hosts << "localhost"
+  
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
