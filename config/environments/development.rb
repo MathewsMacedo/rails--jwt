@@ -47,6 +47,7 @@ Rails.application.configure do
   config.hosts << "up_faceruby"
   config.hosts << "faceruby-ms"
   config.hosts << "localhost"
+  config.hosts << "kafka"
   
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true

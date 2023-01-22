@@ -83,7 +83,7 @@ Rails.application.configure do
   config.hosts << "up_faceruby"
   config.hosts << "faceruby-ms"
   config.hosts << "localhost"
-  
+  config.hosts << "kafka"
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 
